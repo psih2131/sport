@@ -1,0 +1,40 @@
+@mixin btnType1 {
+    border-radius: 4px;
+    background: $blue;
+    color: $white;
+    border: solid 1px $blue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+    &:hover {
+        color: $blue;
+        background: none;
+        transition: all ease 0.3s;
+        border: solid 1px $blue;
+    }
+}
+
+@mixin btnType2 {
+    padding: 8px 23px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 4px;
+    border: solid 1px #D7DBEC;
+    color: $blue;
+    background: #FFF;
+    transition: all ease 0.3s;
+
+    &:hover {
+        background: $blue;
+        border: solid 1px $blue;
+        color: $white;
+        transition: all ease 0.3s;
+    }
+}

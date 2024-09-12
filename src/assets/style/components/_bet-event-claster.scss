@@ -1,0 +1,172 @@
+.bet-event-claster {
+    background: $blue4;
+    border-radius: 10px;
+}
+
+.bet-event-claster__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.bet-event-claster__header-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    color: $white;
+}
+
+.bet-event-claster__header-right {
+    display: flex;
+}
+
+.bet-event-claster__header-ar {
+
+
+    svg {
+        display: block;
+        margin-left: 10px;
+        transition: all ease 0.3s;
+    }
+}
+
+.bet-event-claster__body {
+    padding: 0 15px 15px 15px;
+}
+
+.bet-event-claster__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bet-event-claster__col {
+    .bet-event-claster-element {
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.bet-event-claster__row-header {
+    padding-bottom: 5px;
+}
+
+.bet-event-claster__row-header-title {
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: $grey2;
+}
+
+
+
+.bet-event-claster_col-2 {
+    .bet-event-claster__col {
+        width: calc(50% - 5px);
+    }
+}
+
+.bet-event-claster_col-3 {
+    .bet-event-claster__col {
+        width: calc(33.333% - 6.5px);
+    }
+}
+
+
+.bet-event-claster_range {
+    .bet-event-claster__col {
+        width: calc(33.333% - 6.5px);
+    }
+}
+
+.bet-event-claster__range-title {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: $grey2;
+    text-align: center;
+}
+
+.bet-event-claster__range-wrapper {
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .vue-slider-ltr .vue-slider-mark-label {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        color: $white;
+    }
+
+
+    .vue-slider-rail {
+        background: $blue5;
+    }
+
+    .vue-slider-ltr .vue-slider-mark-step {
+        opacity: 0;
+    }
+
+    .vue-slider-process {
+        background: $green1;
+
+
+
+    }
+
+    .vue-slider-dot-tooltip-top {
+        display: none;
+    }
+
+    .vue-slider-dot-handle {
+        box-shadow: none;
+        background: $green1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            width: 4px;
+            height: 4px;
+            position: absolute;
+            content: "";
+            background: $blue5;
+            border-radius: 100px;
+        }
+    }
+}
+
+
+.bet-event-claster_col-2-long {
+    .bet-event-claster__col {
+        width: 721px;
+    }
+
+    .bet-event-claster__col-short {
+        width: calc(100% - 721px - 10px);
+    }
+}
+
+
+
+
+
+
+.bet-event-claster_open {
+    .bet-event-claster__header-ar {
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+}

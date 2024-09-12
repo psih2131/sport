@@ -1,0 +1,16 @@
+.bet-express__header {
+    border-bottom: none;
+}
+
+
+.bet-express__body {
+    padding: 0 14px 10px 14px;
+}
+
+.bet-express {
+    border-bottom: dashed 4px #161F2C;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}

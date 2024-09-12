@@ -1,0 +1,108 @@
+.sort-list {
+    position: relative;
+    min-width: 125px;
+
+}
+
+.sort-list__header {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    background: $blue3;
+    padding: 0 39px 0 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+}
+
+.sort-list__value {
+    background: none;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    color: $white;
+    border: none;
+    cursor: pointer;
+}
+
+.sort-list__ar {
+    position: absolute;
+    right: 14px;
+
+    svg {
+        transition: all ease 0.3s;
+        display: block;
+    }
+}
+
+.sort-list__data-wrapper {
+    position: absolute;
+    top: 45px;
+    left: 0;
+
+    width: 100%;
+}
+
+.sort-list__body {
+    padding: 10px;
+    border-radius: 5px;
+    background: $blue3;
+}
+
+.sort-list__element {
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+
+}
+
+.sort-list__element-title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    color: $grey2;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+
+    &:hover {
+        color: $white;
+        transition: all ease 0.3s;
+    }
+}
+
+.sort-list__element_activ {
+    background: $blue5;
+
+    .sort-list__element-title {
+        color: $white;
+    }
+}
+
+
+.sort-list_open {
+    .sort-list__ar {
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.sort-list__counter {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 3px;
+    padding: 2px 4px;
+    background: $yellow1;
+    color: $blue3;
+    margin-left: 7px;
+}

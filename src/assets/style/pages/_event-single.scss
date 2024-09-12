@@ -1,0 +1,409 @@
+.event-single-sec {
+    padding-top: 44px;
+    padding-bottom: 150px;
+}
+
+.event-single-sec__header {
+    display: flex;
+    align-items: center;
+}
+
+.event-single-sec__back {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: $blue3;
+    cursor: pointer;
+
+    svg {
+        display: block;
+    }
+}
+
+.event-single-sec__link-row {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 5px;
+    height: 40px;
+    background: $blue3;
+    padding: 0 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    color: $grey2;
+
+    span {
+        margin: 0 5px;
+    }
+}
+
+.event-single-sec__link {
+    display: inline-block;
+    color: $grey2;
+    transition: all ease 0.3s;
+
+    &:hover {
+        color: $white;
+        transition: all ease 0.3s;
+    }
+}
+
+.event-single-sec__main {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-single-sec__big-container {
+    width: 956px;
+}
+
+.event-single-sec__banner {
+    width: 100%;
+}
+
+.event-banner {
+    position: relative;
+    width: 100%;
+    height: 215px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: $blue2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-banner__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
+}
+
+.event-banner__status {
+    display: flex;
+    align-items: center;
+    right: 30px;
+    bottom: 15px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: $grey2;
+    z-index: 10;
+    position: absolute;
+
+    svg {
+        display: block;
+        margin-right: 5px;
+    }
+}
+
+.event-banner-info {
+    position: absolute;
+    z-index: 10;
+    border-radius: 5px;
+    background: $blue2;
+    /* Shadow/medium element */
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.20);
+    width: 330px;
+
+}
+
+.event-banner-info__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-banner-info__col-1 {
+    width: 170px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.event-banner-info__col-2 {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.event-banner-info__row-date {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: $grey2;
+}
+
+.event-banner-info__row-header {
+    height: 30px;
+    background: $blue3;
+    border-radius: 5px 5px 0 0;
+}
+
+.event-banner-info__card {
+    svg {
+        display: block;
+    }
+}
+
+.event-banner-info__row-body {
+    height: 40px;
+}
+
+.event-banner-info__value {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: $grey2;
+    text-align: center;
+}
+
+.event-banner-info__oponent-name {
+    display: flex;
+    align-items: center;
+}
+
+.event-banner-info__oponent-icon {
+    margin-right: 5px;
+
+    svg {
+        display: block;
+    }
+}
+
+.event-banner-info__oponent-title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: $white;
+}
+
+.event-banner-info__col-2-last {
+    background: $blue5;
+}
+
+.event-single-sec__bets-container {
+    margin-top: 30px;
+}
+
+.bets-no-value {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.bets-no-value__icon-wrapper {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+
+    svg {
+        display: block;
+    }
+}
+
+.bets-no-value__title {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 21px;
+    color: $grey2;
+}
+
+.event-single-sec__current-values-search {
+    margin-top: 30px;
+}
+
+.bets-current-values__hidden {
+    padding: 40px 0;
+}
+
+.bets-current-values__show {
+    padding-top: 30px;
+}
+
+.bet-event-claster {
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.event-banner-mob {
+    display: none;
+
+    .event-banner__status {
+        position: relative;
+        left: auto;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        margin-top: 5px;
+    }
+
+}
+
+.event-banner-mob__table-wrapper {
+    background: $blue2;
+    border-radius: 5px;
+}
+
+.event-banner-mob__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.event-banner-mob__team {
+    width: calc(50% - 50px);
+}
+
+.event-banner-mob__team {
+    display: flex;
+    align-items: center;
+}
+
+.event-banner-mob__team-icon {
+    width: 20px;
+
+    img {
+        max-width: 20px;
+        display: block;
+        max-width: 20px;
+    }
+}
+
+.event-banner-mob__team-title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    color: $white;
+    margin-left: 5px;
+}
+
+.event-banner-mob__team-right {
+    justify-content: flex-end;
+
+    .event-banner-mob__team-title {
+        margin-right: 5px;
+        margin-left: 0;
+    }
+}
+
+.event-banner-mob__header-counter-title {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background: $blue5;
+    display: inline-block;
+    margin: 0 auto;
+    color: $white;
+}
+
+.event-banner-mob__header-counter-value {
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    color: $white;
+    width: 100%;
+    text-align: center;
+}
+
+.event-banner-mob__header-counter {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.event-banner-mob__body {
+    border-bottom: solid 1px #33455D;
+    border-top: 1px solid #33455D;
+}
+
+.event-banner-mob__table-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    color: $white;
+    padding-top: 5px;
+}
+
+.event-banner-mob__table {
+    padding: 0 10px 10px 10px;
+}
+
+.event-banner-mob__table-row-header {
+    padding: 5px 0;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    border-bottom: solid 1px #33455D;
+    color: $grey2;
+}
+
+.event-banner-mob__table-col-1 {
+    width: 100px;
+}
+
+.event-banner-mob__table-coll-2 {
+    width: 42.5px;
+    text-align: center;
+}
+
+.event-banner-mob__footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.event-banner-mob__icon-down {
+    svg {
+        display: block;
+    }
+}
+
+.bet-event-claster__header-type {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+
+    color: $white;
+}

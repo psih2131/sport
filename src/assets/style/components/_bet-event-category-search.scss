@@ -1,0 +1,74 @@
+.bets-event-category-search__slider-element-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    color: $grey4;
+    display: inline-block;
+    transition: all ease 0.3s;
+
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.bets-event-category-search__slider-element_activ {
+
+
+    .bets-event-category-search__slider-element-title {
+        color: $white;
+        background: $grey5;
+
+    }
+}
+
+.bets-event-category-search {
+    .bets-event-category-search__slider {
+
+        padding-bottom: 14px;
+
+
+        &:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            left: 0;
+            height: calc(100% - 14px);
+            background: $blue3;
+            border-radius: 10px;
+            left: 0;
+            top: 0;
+        }
+
+        .swiper-slide {
+            display: inline-block;
+            width: auto;
+            padding: 6px;
+            // background: $blue3;
+            border-radius: 0px;
+
+        }
+
+        .swiper-wrapper {
+
+            // width: calc(100% + 12px);
+            // height: calc(100% - 10px);
+        }
+
+        .swiper-scrollbar {
+            border-radius: 100px;
+            height: 5px;
+            background: $blue3;
+            width: 100%;
+            left: 0;
+        }
+
+        .swiper-scrollbar-drag {
+            border-radius: 100px;
+            background: $blue5;
+        }
+
+    }
+}

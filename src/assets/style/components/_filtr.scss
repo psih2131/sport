@@ -1,0 +1,160 @@
+.filtr {
+    width: 216px;
+    position: relative;
+    z-index: 200,
+}
+
+.filtr__header {
+    height: 40px;
+    transition: all ease 0.3s;
+    border-radius: 5px;
+    background: $blue3;
+    padding: 0 39px 0 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+}
+
+.filtr__current-value {
+    background: none;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    color: $white;
+    border: none;
+    cursor: pointer;
+}
+
+.filtr__counter {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 3px;
+    padding: 2px 4px;
+    background: $blue5;
+    color: $grey2;
+    margin-left: 7px;
+}
+
+.filtr__ar {
+    position: absolute;
+    right: 14px;
+
+    svg {
+        transition: all ease 0.3s;
+        display: block;
+    }
+}
+
+.filtr__data-wrapper {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.filtr__body {
+    padding: 10px;
+    transition: all ease 0.3s;
+    border-radius: 5px;
+    background: $blue3;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.filtr__body::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 100px;
+}
+
+.filtr__body::-webkit-scrollbar-track {
+    background: #0F1923;
+    border-radius: 100px;
+}
+
+.filtr__body::-webkit-scrollbar-thumb {
+    background-color: #29374B;
+    border-radius: 100px;
+
+}
+
+
+
+.checkbox {
+    margin-bottom: 0.2em;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox>span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox {
+    span {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        color: $white;
+    }
+}
+
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox>span::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #586C88;
+    border-radius: 3px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+}
+
+
+
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox>input:checked+span::before {
+    border-color: $green1;
+    background-color: $green1;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3e%3cpath d='M5.288 8.775L13.763 0.3C13.963 0.1 14.1963 0 14.463 0C14.7297 0 14.963 0.1 15.163 0.3C15.363 0.5 15.463 0.7375 15.463 1.0125C15.463 1.2875 15.363 1.525 15.163 1.725L5.988 10.925C5.788 11.125 5.55467 11.225 5.288 11.225C5.02133 11.225 4.788 11.125 4.588 10.925L0.288 6.625C0.088 6.425 -0.00783333 6.1875 0.0005 5.9125C0.00883333 5.6375 0.113 5.4 0.313 5.2C0.513 5 0.7505 4.9 1.0255 4.9C1.3005 4.9 1.538 5 1.738 5.2L5.288 8.775Z' fill='white'/%3e%3c/svg%3e");
+
+}
+
+.activ-filtr-open {
+    .filtr__body {
+        box-shadow: 0px 0px 10px 0px rgba(4, 4, 4, 0.30);
+    }
+
+    .filtr__header {
+        box-shadow: 0px 0px 10px 0px rgba(4, 4, 4, 0.30);
+    }
+
+    .filtr__ar {
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+}
