@@ -1,6 +1,127 @@
 @media only screen and (max-width: 1320px) {
     .container {
-        width: 330px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container-slider-blog {
+        width: 100%;
+
+        .swiper {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1110px) {
+    .event-single-sec__big-container {
+        width: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .rate-card__field-title {
+        font-size: 12px;
+    }
+
+    .rate-card__field-value {
+        font-size: 12px;
+    }
+
+    .rate-card__resoult-list-name {
+        font-size: 12px;
+    }
+
+    .rate-card__resoult-link-cat-row {
+        font-size: 12px;
+    }
+
+    .rate-card__field-stoped-title {
+        font-size: 12px;
+    }
+
+    .rate-card__field-stoped-value {
+        font-size: 12px;
+    }
+
+    .rate-card__field-row {
+        .rate-card__field-stoped-wrapper {
+            padding: 0;
+        }
+    }
+
+    .rate-card__more {
+        padding-right: 0;
+    }
+
+    .my-bets__grid {
+        align-items: stretch;
+    }
+
+    .my-bets__coll {
+        display: contents;
+    }
+
+    .my-bets__element {
+        width: calc(50% - 10px);
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .popup-aside {
+        .my-bets__element {
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 860px) {
+
+    .rate-card__field-title {
+        font-size: 14px;
+    }
+
+    .rate-card__field-value {
+        font-size: 14px;
+    }
+
+    .rate-card__resoult-list-name {
+        font-size: 14px;
+    }
+
+    .rate-card__resoult-link-cat-row {
+        font-size: 14px;
+    }
+
+    .rate-card__field-stoped-title {
+        font-size: 14px;
+    }
+
+    .rate-card__field-stoped-value {
+        font-size: 14px;
+    }
+
+
+
+    .sport-nav__list-element-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container {
+        width: 100%;
     }
 
     .blog-sec {
@@ -10,14 +131,14 @@
 
     .blog-sec__slider-wrapper {
         .blog-sec__slider {
-            .swiper-slide {
-                width: 306px;
-            }
+            // .swiper-slide {
+            //     width: 306px;
+            // }
         }
 
-        .swiper-slide:first-child {
-            margin-left: calc(50% - 165px);
-        }
+        // .swiper-slide:first-child {
+        //     margin-left: calc(50% - 165px);
+        // }
     }
 
     .post-blog {
@@ -536,15 +657,7 @@
 
 
 
-    // MY BETS PAGE
 
-    .my-bets__coll {
-        display: contents
-    }
-
-    .my-bets__grid {
-        display: block;
-    }
 
 
 
@@ -672,4 +785,40 @@
         pointer-events: none;
     }
 
+}
+
+
+@media only screen and (max-width: 600px) {
+    // MY BETS PAGE
+
+    .my-bets__coll {
+        display: contents
+    }
+
+    .my-bets__grid {
+        display: block;
+    }
+
+    .my-bets__element {
+        width: 100%;
+        display: block;
+    }
+
+    .popup-aside {
+        width: 100%;
+    }
+
+    .popup-aside__body-have-bets {
+        padding-right: 10px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container-slider-blog .swiper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
