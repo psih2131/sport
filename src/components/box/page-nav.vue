@@ -192,16 +192,15 @@ import 'swiper/css/navigation';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
+// import 'swiper/css/scrollbar';
 
 export default {
 
     data() {
         return {
-
           
           breakpoints: {
-            // Настройки адаптивности
+         
             320: {
    
               spaceBetween: 10, // 10px между слайдами
